@@ -154,10 +154,89 @@ Before building, aim to have:
 - A moderation and support plan for the pilot.
 - A short list of success measures and a date to review the pilot.
 
+## Project charter for the first build cycle
+
+This README is the project charter for the website-first pilot. For the first build cycle, the following are fixed:
+
+- **Vision:** reduce avoidable food waste by helping nearby people share safely prepared surplus food.
+- **Target users:** local food sharers, local collectors, and moderators.
+- **MVP scope:** account access, listings, request/accept flow, listing status updates, private coordination, and basic reporting/moderation.
+- **Out of scope for now:** native apps, delivery matching, payments, reputation systems, and multi-region complexity.
+
+Open questions and success measures remain active as decision checkpoints and must be reviewed before launch.
+
+## Website-first pilot definition
+
+To begin implementation and learning, use this pilot definition:
+
+- **Pilot community:** one neighbourhood or town section (single local area only).
+- **Primary use case:** household sharers post surplus prepared food for nearby collectors to request and collect.
+- **Product boundary:** focus on local discovery and collection coordination, not delivery or payments.
+
+Core flows to prioritize in implementation:
+
+1. Create and publish a listing.
+2. Browse/filter listings by area and collection window.
+3. Request, accept/decline, and coordinate collection privately.
+4. Mark listing as collected, expired, or unavailable.
+
+Pre-launch safety and privacy rules required for the pilot:
+
+- Ingredient/allergen disclosure is required for every listing.
+- Preparation timing, storage details, and collection window must be provided.
+- Exact address/contact details are only shared privately after acceptance.
+- Reporting unsafe or misleading listings must be available.
+- Basic moderation actions (review, hide, document action) must exist before public pilot use.
+
+## Beginner-friendly learning path
+
+Build the MVP in small, testable steps so coding learning stays practical:
+
+1. **Auth basics:** account sign-up, sign-in, sign-out, and protected pages.
+2. **Listing basics:** create/edit/pause/remove listings with required fields.
+3. **Discovery basics:** listing feed with simple area and availability filters.
+4. **Request flow:** request, accept/decline, cancel, and listing status transitions.
+5. **Moderation basics:** report listing/user and moderator review actions.
+6. **Pilot feedback:** track the early success measures and adjust weak flows.
+
+Rule for learning and delivery: complete one step at a time, verify it works end-to-end, then move to the next step.
+
+## First implementation roadmap
+
+- **Phase 1: setup + basic pages**
+  - Repository setup and project structure.
+  - Basic navigation and page skeletons.
+  - Authentication and access control foundations.
+
+- **Phase 2: listing creation and browsing**
+  - Listing form with required safety fields.
+  - Listing cards/details and basic filters.
+  - Listing lifecycle actions for sharers.
+
+- **Phase 3: request/accept flow**
+  - Request submission and decision flow.
+  - Private collection coordination channel.
+  - Status updates from requested to completed/unavailable.
+
+- **Phase 4: trust/safety basics and pilot feedback loop**
+  - Reporting and moderator workflow.
+  - Pilot metrics tracking and review routine.
+  - Iterative improvements based on pilot outcomes.
+
+## Mobile app decision gate
+
+Do not plan or build a native app during the first cycle. Reconsider an app only after the website pilot shows sustained use and clear app-specific needs.
+
+Suggested gate signals:
+
+- Repeat usage from both sharers and collectors.
+- Stable completion rate of requests to collections.
+- Manageable report/safety incident levels.
+- Clear feature needs that are hard to satisfy with a responsive website alone.
+
 ## Status
 
 **Current stage:** idea and planning.
 
-**Next step:** answer the open questions, choose a small pilot community, and validate the main journeys before building the website.
-
+**Next step:** choose the exact pilot community, then start Phase 1 and implement one learning step at a time.
 
